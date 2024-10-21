@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/main.js",
+      "declarations": [],
+      "exports": []
+      },
+        {
+          "kind": "javascript-module",
+          "path": "src/un-sdg.js",
+          "declarations": [
+            {
+              "kind": "class",
+              "description": "",
+              "name": "unSdg",
+              "members": [
+              {
+              "kind": "field",
+              "name": "tag",
+              "static": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference"
+            },
+            {
+              "kind": "field",
+              "name": "goal",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"all\"",
+              "privacy": "public",
+              "attribute": "goal"
+            },
+            {
+              "kind": "field",
+              "name": "colorOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "privacy": "public",
+              "attribute": "colorOnly"
+            },
+            {
+              "kind": "field",
+              "name": "itemWidth",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"500px\"",
+              "privacy": "public",
+              "attribute": "itemWidth"
+            },
+            {
+              "kind": "field",
+              "name": "itemHeight",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"200px\"",
+              "privacy": "public",
+              "attribute": "itemHeight"
+            },
+            {
+              "kind": "field",
+              "name": "goals",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\n      1: {\n        //Image: 1,\n        link: \"https://unfoundation.org/blog/post/reversal-and-resilience-sdg-progress-after-a-year-of-covid-19/\",\n        title: \"Reversal and Resilience: SDG Progress After a Year of COVID-19\"\n      },\n      2: {\n        //Image: 2,\n        link: \"https://unfoundation.org/blog/post/hungrier-than-ever-generations-of-undernourished-and-overlooked-mothers-women-and-girls/\",\n        title: \"Hungrier Than Ever: Generations Of Undernourished And Overlooked Mothers, Women And Girls\"\n      },\n      3: {\n        //Image: 3,\n        link: \"https://unfoundation.org/blog/post/health-for-all-our-experts-reflect-on-whos-75-years-of-impact/\",\n        title: \"Health For All: Our Experts Reflect On WHO's 75 Years Of Impact\"\n      },\n      4: {\n        //Image: 4,\n        link: \"https://unfoundation.org/blog/post/7-innovative-ways-american-universities-are-driving-progress-on-the-sdgs/\",\n        title: \"7 Innovative Ways American Universities are Driving Progress on the SDGs\"\n      },\n      5: {\n        //Image: 5,\n        link: \"https://unfoundation.org/blog/post/stand-with-her-6-women-led-organizations-tackling-gender-based-violence/\",\n        title: \"Stand With Her: 6 Women-Led Organizations Tackling Gender-Based Violence\"\n      },\n      6: {\n        //Image: 6,\n        link: \"https://unfoundation.org/blog/post/the-last-straw-how-you-can-beat-plastic-pollution/\",\n        title: \"The Last Straw: How You Can Beat Plastic Pollution\"\n      },\n      7: {\n        //Image: 7,\n        link: \"https://unfoundation.org/blog/post/in-india-a-cleaner-way-of-cooking-fuels-climate-action-in-the-home/\",\n        title: \"In India, a Cleaner Way of Cooking Fuels Climate Action in the Home\"\n      },\n      8: {\n        //Image: 8,\n        link: \"http://unfoundation.org/blog/post/protectors-of-progress-manyang-redefines-refugees/\",\n        title: \"Protectors of Progress: Manyang Redefines Refugees\"\n      },\n      9: {\n        //Image: 9,\n        link: \"https://unfoundation.org/blog/post/key-takeaways-from-act-accelerator-platform-for-sharing-pandemic-countermeasures/\",\n        title: \"Key Takeaways From The ACT- Accelerator: A First-Of-Its-Kind Platform For Sharing Pandemic Countermeasures\"\n      },\n      10: {\n        //Image: 10,\n        link: \"https://unfoundation.org/blog/post/breakdown-or-breakthrough-the-high-stakes-in-our-common-agenda/\",\n        title: \"Breakdown or Breakthrough? The High Stakes in Our Common Agenda\"\n      },\n      11: {\n        //Image: 11,\n        link: \"https://unfoundation.org/blog/post/how-5-community-foundations-in-kansas-are-bringing-the-sdgs-home/\",\n        title: \"How 5 Community Foundations in Kansas are Bringing the SDGs Home\"\n      },\n      12: {\n        //Image: 12,\n        link: \"https://unfoundation.org/blog/post/these-companies-leading-climate-race-against-time/\",\n        title: \"These Companies Leading Climate Race Against Time\"\n      },\n      13: {\n        //Image: 13,\n        link: \"https://unfoundation.org/blog/post/3-recent-diplomatic-wins-for-climate-justice-and-what-comes-next/\",\n        title: \"3 Recent Diplomatic Wins For Climate Justice — And What Comes Next\"\n      },\n      14: {\n        //Image: 14,\n        link: \"https://unfoundation.org/blog/post/climate-energy-and-food-crises-loom-heres-why-the-ocean-could-be-the-solution/\",\n        title: \"Climate Energy And Food Crises Loom. Heres Why The Ocean Could Be The Solution\"\n      },\n      15: {\n        //Image: 15,\n        link: \"https://unfoundation.org/blog/post/meet-3-women-in-brazil-who-are-protecting-the-amazon-rainforest-and-indigenous-rights/\",\n        title: \"Meet 3 Women In Brazil Who Are Protecting The Amazon Rainforest And Indigenous Rights\"\n      },\n      16: {\n        //Image: 16,\n        link: \"https://unfoundation.org/blog/post/reimagining-a-multilateral-future-with-by-and-for-young-people/\",\n        title: \"Reimagining A Multilateral Future With, By, And For Young People\"\n      },\n      17: {\n        //Image: 17,\n        link: \"https://unfoundation.org/blog/post/a-city-rising-how-phoenix-is-harnessing-the-power-of-sdg-17/\",\n        title: \"A City Rising: How Phoenix Is Harnessing The Power Of SDG 17\"\n      }\n    }"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "goal",
+              "fieldName": "goal"
+            },
+            {
+              "name": "colorOnly",
+              "fieldName": "colorOnly"
+            },
+            {
+              "name": "itemWidth",
+              "fieldName": "itemWidth"
+            },
+            {
+              "name": "itemHeight",
+              "fieldName": "itemHeight"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "unSdg",
+          "declaration": {
+            "name": "unSdg",
+            "module": "src/UN-STG.js"
+          }
+        }
+      ]
+    }
+  ]
+}

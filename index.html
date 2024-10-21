@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Demonstration for UN-STG">
+
+
+  <style>
+    :root, html, body {
+      margin: 0;
+      padding: 0;
+    }
+    #demo {
+      margin: var(--ddd-spacing-2);
+    }
+    UN-STG {
+      margin: var(--ddd-spacing-2);
+      border: var(--ddd-border-md);
+      border-radius: var(--ddd-radius-lg);
+    }
+    UN-STG:hover {
+      box-shadow: var(--ddd-boxShadow-sm);
+    }
+    #example {
+      --UN-STG-font-size: var(--ddd-font-size-l);
+      background-color: var(--ddd-accent-2);
+      color: var(--ddd-primary-17);
+    }
+  </style>
+  <title>UN-STG</title>
+</head>
+
+<body>
+  <div id="demo">
+    <h1>UN-SDG</h1>
+    <!-- this is going to do whatever the tag's defaults are -->
+    <h2>Randomization</h2>
+    <un-sdg goal="1" colorOnly="true" id="top_goal" imgSrc="/lib/svgs/Sustainable_Development_Goal_01NoPoverty.svg.png"></un-sdg>
+    
+    <button id="randomize-button">Randomize Goal</button>
+
+    <h2>Display All Goals</h2>
+    <UN-STG imgSrc="/lib/svgs/Sustainable_Development_Goal_01NoPoverty.svg.png"></UN-STG>
+
+    <h2>Display All Goals [Colors Only]</h2>
+    <UN-STG colorOnly="true" imgSrc="/lib/svgs/Sustainable_Development_Goal_01NoPoverty.svg.png"></UN-STG>
+
+    <h2>Resized</h2>
+    <UN-STG goal="8" itemHeight="100px" itemWidth="100px" imgSrc="/lib/svgs/Sustainable_Development_Goal_08DecentWorkEconomicGrowth.svg.png"></UN-STG>
+    
+    <h2>Logo Image</h2>
+    <un-stg goal="logo" imgSrc="/lib/svgs/logo.png"></un-stg>
+    </div>
+
+    <script type="module" src="./src/UN-STG.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+
+
+  <!-- Take HAX, the Web and you further down the rabbit hole -->
+  <style>
+    #follow-the-white-rabbit {
+      margin: var(--ddd-spacing-4) auto 64px  16px;
+      background-color: var(--ddd-accent-4);
+      color: black;
+    }
+    #follow-the-white-rabbit[open] summary {
+      background-color: var(--ddd-accent-4) !important;
+      color: black;
+    }
+    #follow-the-white-rabbit[open] .content {
+      padding: 0 var(--ddd-spacing-4);
+    }
+    #follow-the-white-rabbit ul,
+    #follow-the-white-rabbit li {
+      padding: 0;
+      margin: 0;
+    }
+    #follow-the-white-rabbit li {
+      font-size: var(--ddd-font-size-xs);
+      list-style: none;
+    }
+    #follow-the-white-rabbit li strong,
+    #follow-the-white-rabbit li a {
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
+      color: black;
+      display: block;
+      font-weight: bold;
+    }
+    #follow-the-white-rabbit li:focus-within a,
+    #follow-the-white-rabbit li:hover a {
+      background-color: black;
+      color: yellow;
+    }
+  </style>
+  
+</body>
+</html>
